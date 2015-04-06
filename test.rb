@@ -14,6 +14,10 @@ class Account
   def to_s
     balance.to_s
   end
+
+  def %(x)
+    self.balance % x
+  end
 end
 
 acc = Account.new(20)
